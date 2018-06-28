@@ -1,0 +1,83 @@
+
+
+/* NAVBAR  */
+html {
+    margin-top:0!important;
+}
+
+.navbar {
+    background:white;
+    z-index: 1111;
+    padding-right:5rem;
+}
+.navbar .navbar-brand {
+    color: white;
+    z-index: 1111;
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size:2rem;   
+    padding-left:5rem;
+}
+
+.nav-link {
+    color:#fff!important;
+}
+
+/* END NAVBAR */
+.hero {
+    background-image: url(../images/work.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+}
+
+.hero__header {
+    color:white!important;
+    text-transform: uppercase;
+    font-size:4rem;
+    letter-spacing: .2rem;
+}
+
+.hero__content {
+    color:aqua;
+}
+
+.hero__btn {
+    position: absolute;
+    bottom:10%;
+    right:50%;
+ 
+}
+
+.hero__btn a {
+    color:#fff;
+    text-transform: uppercase;
+    font-size:1.2rem;
+    border-radius: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+
+.hero::before {
+    background-color: rgba(0, 0, 0, 0.2);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.page-title {
+    color:red!important;
+}
+
+.taxonomy-description {
+    font-size:13px;
+    font-style: italic;
+}
+
+.the_title {
+    color:coral;  
+    padding-top:4rem;
+}
+

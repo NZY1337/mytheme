@@ -1,0 +1,6 @@
+<?php 
+    /*  
+        tags, categories page
+    */
+?>
+
