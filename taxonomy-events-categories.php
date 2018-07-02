@@ -1,5 +1,7 @@
 
-<!--  Category Page	-->
+<!--  BLOG PAGE	-->
+<!-- archive page for custom post type (Events)	 -->
+
 <?php get_header(); ?>
 
 <div class="container pt-5">
@@ -10,15 +12,16 @@
 		</div>
 		
 		<div class="col-xl-12">
+			
 			<?php if (have_posts()): 
 				 while(have_posts()) : the_post(); ?>
 						<?php if (has_post_thumbnail() ): ?>
-
-							<!-- display thumbnail -->
-							<!-- <div class=""><?php the_post_thumbnail('large'); ?></div> -->
-						
-						<?php endif; ?>
 						<?php the_title('<h2 class="the_title ">', '</h2>'); ?>
+							<!-- display thumbnail -->
+						<div class="pt-4"><?php echo the_post_thumbnail('large');?></div> 
+
+						<?php endif; ?>
+						
 						<p class="mb-0 pt-4">Published on: 
 							<span class=""><?php echo get_the_date( 'Y-m-d' ); ?></span>
 						</p>

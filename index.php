@@ -1,5 +1,7 @@
 
-<?php get_header(); ?>
+<?php
+ /*Template Name: Homepage */
+get_header(); ?>
 <?php include 'parts/hero.php';?>
 
 <div class="container pt-5">
