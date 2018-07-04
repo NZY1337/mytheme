@@ -2,7 +2,7 @@
 <!-- EVENTS PAGE	-->
 
 <?php 
-	/* Template name: category_archives */
+	/* Template name: conferences_archives */
 ?>
 
 <?php get_header(); ?>
@@ -10,9 +10,13 @@
 					<div class="row pt-5">
 						<div class="col-xl-6">
 								<h1 class="text-capitalize">
+							
+								
+								
 									 <?php 
 											$post_type = get_post_type( get_the_ID() );
 											echo $post_type;
+											 
    									?>
  								</h1> 
 								 
@@ -28,7 +32,7 @@
 							<h1>Categories</h1>
 						<?php
 							$args = array(
-										'taxonomy' => 'events-categories',
+										'taxonomy' => 'conferences-categories',
 										'orderby' => 'name',
 										'order'   => 'ASC'
 									);
@@ -40,8 +44,8 @@
 								<ul class="m-0">
 									<li>
 										<a href="<?php echo get_category_link( $cat->term_id ) ?>">
-											<?php echo $cat->cat_name; ?>	
-											<?php  echo number_postpercat ($cat->term_id); ?>
+											<?php echo $cat->cat_name; ?>
+											<?php  echo number_postpercat ($cat->term_id); ?>	
 										</a>
 									</li>
 								</ul>
@@ -71,7 +75,7 @@
 							<?php 
 									// the query 
 									$criteria = array (
-										'post_type' => 'events',
+										'post_type' => 'conferences',
 										'post_per_page' => 7,
 										// 'category_name' => 'cities'
 									);
@@ -95,11 +99,11 @@
                                         <p class="">Category:
 												
 										<?php
-												$terms = get_the_terms($post->ID , 'events-categories');
+												$terms = get_the_terms($post->ID , 'conferences-categories');
 												foreach($terms as $term){
 													echo '<a class="events_category" href="'. get_term_link($term) . '">' .  "</a>";
 												}
-												the_terms( $post->ID , 'events-categories' );
+												the_terms( $post->ID , 'conferences-categories' );
 										?>
 										 <hr class="w-25 ml-0 "> <small><?php the_category(); ?></small></p>
                                         <p>Published on: <span class="font-italic text-secondary"><?php echo get_the_date( 'Y-m-d', $post->ID); ?></span></p>

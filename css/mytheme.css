@@ -84,3 +84,17 @@ html {
 .events_category {
     color:red!important;
 }
+
+.formNew label  {
+    color:lightcoral;
+    font-weight: bold;
+}
+
+.formNew input, textarea {
+    border:1px solid black;
+}
+
+.formNew input[type='submit'] {
+    padding:.5rem 2rem;
+    cursor: pointer;
+}

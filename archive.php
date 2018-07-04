@@ -13,21 +13,22 @@
 		<?php while ( have_posts() ) : the_post(); ?>
            
 			<div class="container pt-5">
-					<div class="row pt-5	">
 						
+					<div class="row pt-5">
+							
 						<div class="col-xl-6">
+								
                                 <h1 class=""> <?php the_title(); ?></h1>
-								<p class="mb-0 pt-4">Published on: 
+								<p class="mb-0 pt-4">Published on:	 
 									<span class="font-weight-bold"><?php echo get_the_date( 'Y-m-d' ); ?></span>
 								</p>
 								<p class="mb-0">Posted by:
 									<span class="font-weight-bold"><?php the_author(); ?></span> <span class="font-weight-bold">at <?php the_time(); ?></span>
 								</p>
-								
-								
 						</div>
 						<div class="col-xl-6  bg-dark text-white">
 							<p class="text-center mr-0"><?php get_sidebar(); ?></p>
+							
 						</div>
 					</div>
 
@@ -96,6 +97,7 @@
 	<div class="row">
 		<div class="col-xl-12">
 				<?php get_sidebar(); ?>
+				
 		</div>
 	</div>
 </div>

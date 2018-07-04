@@ -1,11 +1,11 @@
 
 
-<!-- archive page for custom post type (Events)	 -->
+<!-- display all conferences posts by categories	 -->
 
 <?php get_header(); ?>
 
 <div class="container pt-5">
-	
+  
 	<div class="row pt-5">
 		<div class="col-xl-12 pt-5">
 			<?php	the_archive_title('<h2 class="page-title">', '</h2>'); ?>
@@ -13,7 +13,6 @@
 		</div>
 		
 		<div class="col-xl-12">
-			
 			<?php if (have_posts()): 
 				 while(have_posts()) : the_post(); ?>
 						<?php if (has_post_thumbnail() ): ?>
